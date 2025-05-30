@@ -13,16 +13,8 @@ public class WebConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-<<<<<<< HEAD
                 registry.addMapping("/api/**") // o /** si es todo tu backend
                         .allowedOrigins("books-app-des.netlify.app") // frontend Angular
-=======
-                registry.addMapping("/api/**")
-                        .allowedOrigins(
-                            "http://localhost:4200",
-                            "https://books-app-des.netlify.app"
-                        )
->>>>>>> 2f844017100d347f1cc176406f2b9d684e5c5413
                         .allowedMethods("*")
                         .allowedHeaders("*");
             }
