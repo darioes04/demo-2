@@ -13,10 +13,8 @@ public class WebConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**")
-                        .allowedOrigins(
-                                "https://books-app-des.netlify.app"
-                        )
+                registry.addMapping("/**")
+                        .allowedOrigins("https://books-app-des.netlify.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
             }
