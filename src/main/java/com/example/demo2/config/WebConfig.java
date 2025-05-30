@@ -14,7 +14,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**") // o /** si es todo tu backend
-                        .allowedOrigins("http://localhost:4200") // frontend Angular
+                        .allowedOrigins("books-app-des.netlify.app") // frontend Angular
                         .allowedMethods("*")
                         .allowedHeaders("*");
             }
